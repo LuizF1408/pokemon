@@ -18,7 +18,7 @@ axios.get(`https://pokeapi.co/api/v2/pokemon/${pesquisa}`)
         console.log('***Habilidades do Pokemon***\n'+skil.join("\n"))
 
         var tipos = pokemon.types
-        tipos.forEach(tipos =>{
+        tipos.forEach(tipos => {
             tiposDoPokemon.push(tipos.type.name)
             
 
@@ -28,6 +28,7 @@ axios.get(`https://pokeapi.co/api/v2/pokemon/${pesquisa}`)
 
         })
         console.log('***Tipos do Pokemon***\n'+tiposDoPokemon.join('\n'))
+        
     })
 
     .catch((erro) => {

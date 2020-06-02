@@ -33,3 +33,4 @@ axios.get(`https://pokeapi.co/api/v2/pokemon/${pesquisa}`)
     .catch((erro) => {
         console.log(erro)
     })
+//
